@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlatterVerse - Your universe of flavors</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title-container">
+      <h1 class="main-title">PlatterVerse</h1>
+      <p class="tagline">Your universe of flavors</p>
+      </div>
+      <nav class="categories">
+        <button class="category-btn active" data-category="all">All</button>
+        <button class="category-btn" data-category="Beef">Beef</button>
+        <button class="category-btn" data-category="Chicken">Chicken</button>
+        <button class="category-btn" data-category="Dessert">Dessert</button>
+        <button class="category-btn" data-category="Vegetarian">Vegetarian</button>
+        <button class="category-btn" data-category="Pasta">Pasta</button>
+        <button class="category-btn" data-category="Seafood">Seafood</button>
+      </nav>
+    </header>
+    
+    <div class="container">
+      <div class="search-container">
+        <div class="search-box">
+          <input
+            type="text"
+            placeholder="Search for a recipe..."
+            id="user-inp"
+          />
+          <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+      <div id="result"></div>
+    </div>
+    
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
